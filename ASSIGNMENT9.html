@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ASSIGNMENT9</title>
+  </head>
+  <body bgcolor="00FFFF">
+    <h1>Reservation Request </h1>
+    <form>
+    <fieldset>
+      <legend>General Information</legend>
+      <lable for="Arrival Date"> Arrival Date:</lable>
+      <input type="date" name="Arrival Date" id="Arrival Date" required />
+      <br />
+      <br />
+      <lable for="Nights"> Nights:</lable>
+      <input type="number" name="Nights" id="Nights" required />
+      <br />
+      <br />
+      <lable for="Adults">Adults: </lable>
+      <select type="number" name="Adults" id="Adults">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <br />
+      <br />
+      <lable for="Children">Children: </lable>
+      <select type="number" name="Children" id="Children">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <br />
+      </fieldset>
+        <br />
+        <fieldset>
+          <legend>Preferences</legend>
+        <label for="Room Type"> Room Type: </label>
+        <input  type="radio" name="Room Type">Standard
+        <input  type="radio" name="Room Type">Business
+        <input  type="radio" name="Room Type">Suite
+        <br />
+        <br />
+        <label for="Bed Type"> Bed Type: </label>
+        <input  type="radio" name="Bed Type">King
+        <input  type="radio" name="Bed Type">Double Double
+        <br />
+        <br />
+        <input  type="radio"> Smoking
+        <br />
+        <br />
+        <label for="Food Options"> Food Options: </label>
+        <input type="text" list="Food Options" >
+        <datalist id="Food Options">
+        <option> VEG </option>
+        <option> NON-VEG  </option>
+        <option> Both </option>
+        </datalist>
+        <br />
+        <br />
+        </fieldset>
+        <br />
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="user">  Name: </label>
+        <input  type="text" name="user" id="user" pattern="[a-z]{10}" required />
+        <br />
+        <br />
+    <label for="emailid"> E-mail :</label>
+    <input type="email" name="emailid" id="E-mail"required / >
+    <br />
+    <br />
+    <label for="Phone"> Phone Number:</label>
+    <input type="tel" name="Phone" id="Phone"  pattern="[1-9]{1}[0-9]{9}" required/>
+    <br />
+    <br />
+    <label for="pass"> password :</label>
+    <input type="password" name="pass" id="pass" pattern="[Cc]Coding[Bb]Blocks"required / >
+    <br />
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Distance Information</legend>
+    <label for="fuel"> Fuel Meter:</label>
+    <meter  name="fuel" id="fuel" value="85" min="0" max="100" low="30" high="60" optimum="80"></meter>
+    <br />
+    <br />
+    <label for="prog">Progress Bar :</label>
+    <progress  id="prog" name="prog" value="80" max="100"></progress>
+    <br />
+    <br />
+
+    <label for="box">Write About The Palce Of Visit:</label>
+    <BR />
+    <BR />
+    <textarea name="box"  id="box" rows="4" cols="70" placeholder="Enter Your Paragraph"></textarea>
+    <br />
+    <br />
+    </fieldset>
+    <br />
+    <input  type="Submit" value="Submit"/>
+    </form>
+  </body>
+</html>
